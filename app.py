@@ -4,7 +4,7 @@ from ddgs import DDGS
 import json, csv, time
 
 st.title("LinkedIn Search Tool")
-query = st.text_input("Search query:(ex: ('Owner' OR 'CEO' OR 'Managing Director' OR 'Founder') ('Logistics' OR 'Transport' OR 'Supply Chain' OR 'Warehousing') ('Rotterdam' OR 'Amsterdam' OR 'Eindhoven' OR 'Den Haag' OR 'Utrecht') Netherlands)")
+query = st.text_input("Search query:\n(example: ('Owner' OR 'CEO' OR 'Managing Director' OR 'Founder') ('Logistics' OR 'Transport' OR 'Supply Chain' OR 'Warehousing') ('Rotterdam' OR 'Amsterdam' OR 'Eindhoven' OR 'Den Haag' OR 'Utrecht') Netherlands)")
 site = st.text_input("Site filter (e.g., linkedin.com/in):", "linkedin.com/in")
 max_results = st.number_input("Max results", 10, 500, 100, 10)
 page_size = st.number_input("Results per page", 5, 50, 10, 5)
