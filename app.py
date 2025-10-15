@@ -3,7 +3,7 @@ import streamlit as st
 from ddgs import DDGS
 import json, csv, time
 
-st.title("LinkedIn Search Tool (DuckDuckGo)")
+st.title("LinkedIn Search Tool")
 query = st.text_input("Search query:")
 site = st.text_input("Site filter (e.g., linkedin.com/in):", "linkedin.com/in")
 max_results = st.number_input("Max results", 10, 500, 100, 10)
